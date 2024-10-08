@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scene1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gcalsamaven.HelloController">
+   <children>
+      <HBox alignment="CENTER" layoutX="7.0" prefHeight="400.0" prefWidth="586.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="344.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="35.0" prefWidth="303.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="81.0" layoutY="8.0" text="Select Your Classes" />
+                           </children>
+                        </AnchorPane>
+                     </children></VBox>
+                  <HBox prefHeight="41.0" prefWidth="303.0">
+                     <children>
+                        <CheckBox fx:id="checkboxA" mnemonicParsing="false" onAction="#checkA" prefHeight="18.0" prefWidth="102.0" text="Period A" />
+                        <TextField fx:id="inputA" editable="false" promptText="Class Name" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="303.0">
+                     <children>
+                        <CheckBox fx:id="checkboxB" mnemonicParsing="false" onAction="#checkB" prefHeight="18.0" prefWidth="102.0" text="Period B" />
+                        <TextField fx:id="inputB" editable="false" promptText="Class Name" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="43.0" prefWidth="303.0">
+                     <children>
+                        <CheckBox fx:id="checkboxC" mnemonicParsing="false" onAction="#checkC" prefHeight="18.0" prefWidth="103.0" text="Period C" />
+                        <TextField fx:id="inputC" editable="false" promptText="Class Name" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="45.0" prefWidth="303.0">
+                     <children>
+                        <CheckBox fx:id="checkboxD" mnemonicParsing="false" onAction="#checkD" prefHeight="18.0" prefWidth="103.0" text="Period D" />
+                        <TextField fx:id="inputD" editable="false" prefHeight="26.0" prefWidth="160.0" promptText="Class Name" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="303.0">
+                     <children>
+                        <CheckBox fx:id="checkboxE" mnemonicParsing="false" onAction="#checkE" prefHeight="18.0" prefWidth="103.0" text="Period E" />
+                        <TextField fx:id="inputE" editable="false" promptText="Class Name" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="47.0" prefWidth="303.0">
+                     <children>
+                        <CheckBox fx:id="checkboxF" mnemonicParsing="false" onAction="#checkF" prefHeight="18.0" prefWidth="103.0" text="Period F" />
+                        <TextField fx:id="inputF" editable="false" promptText="Class Name" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="39.0" prefWidth="303.0">
+                     <children>
+                        <CheckBox fx:id="checkboxG" mnemonicParsing="false" onAction="#checkG" prefHeight="18.0" prefWidth="103.0" text="Period G" />
+                        <TextField fx:id="inputG" editable="false" promptText="Class Name" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="303.0">
+                     <children>
+                        <CheckBox fx:id="checkboxH" mnemonicParsing="false" onAction="#checkH" prefHeight="18.0" prefWidth="104.0" text="Period H" />
+                        <TextField fx:id="inputH" editable="false" promptText="Class Name" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="303.0">
+                     <children>
+                        <CheckBox fx:id="checkboxAdvisory" mnemonicParsing="false" onAction="#checkAdvisory" prefHeight="18.0" prefWidth="104.0" text="Advisory" />
+                        <TextField fx:id="inputAdvisory" editable="false" promptText="Class Name" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" prefHeight="400.0" prefWidth="333.0">
+               <children>
+                  <AnchorPane prefHeight="168.0" prefWidth="291.0">
+                     <children>
+                        <Label fx:id="welcomeText" alignment="CENTER" layoutX="25.0" layoutY="26.0" prefHeight="54.0" prefWidth="241.0" text="SA Google Calendar">
+                           <font>
+                              <Font name="Apple Symbols" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="60.0" layoutY="98.0" prefHeight="70.0" prefWidth="167.0" text="Select your classes to populate your calendar!" textAlignment="CENTER" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <VBox alignment="CENTER" prefHeight="66.0" prefWidth="288.0">
+                     <children>
+                        <AnchorPane prefHeight="69.0" prefWidth="288.0">
+                           <children>
+                              <Label fx:id="errorLabel" alignment="CENTER" layoutX="56.0" layoutY="8.0" prefHeight="54.0" prefWidth="176.0" textAlignment="CENTER" wrapText="true" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="107.0" prefWidth="289.0">
+                     <children>
+                        <AnchorPane prefHeight="119.0" prefWidth="288.0">
+                           <children>
+                              <Button fx:id="generateButton" layoutX="28.0" layoutY="8.0" mnemonicParsing="false" onAction="#onGenerateButtonClick" text="Generate Events" />
+                              <Button fx:id="nukeButton" layoutX="154.0" layoutY="8.0" mnemonicParsing="false" onAction="#onNukeButtonClick" prefHeight="26.0" prefWidth="108.0" text="Nuke Events" />
+                              <Button fx:id="refreshButton" layoutX="28.0" layoutY="55.0" mnemonicParsing="false" onAction="#onRefreshButtonClick" prefHeight="26.0" prefWidth="108.0" text="Refresh Events" />
+                              <Button fx:id="saveButton" layoutX="154.0" layoutY="54.0" mnemonicParsing="false" onAction="#onSaveSelectedButtonClick" prefHeight="26.0" prefWidth="108.0" text="Save Selections" />
+                              <Button fx:id="returnHome" layoutX="99.0" layoutY="96.0" mnemonicParsing="false" onAction="#switchToHome" text="Return Home" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
